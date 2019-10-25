@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: [row1-header] 4.5rem [row2-middle] auto [row3-footer] 4.5rem ; 
+    grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start]  3fr [col-2-end]; 
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;  
+    height: 100%;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 500;
+}
+header, aside, main, footer {
+    background: gray;
+
+}
+
+header, footer {
+    grid-column-start:col-1-start;
+    grid-column-end: col-2-end;
+}
+
